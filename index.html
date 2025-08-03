@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smith Legacy Holdings</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <!-- Your HTML content goes here -->
+
+<!-- Firebase SDKs - Add these first -->
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    // Add other Firebase products you'll use (auth, firestore)
+    import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_AUTH_DOMAIN",
+      projectId: "smith-legacy-holdings", // This will be your project ID
+      storageBucket: "YOUR_STORAGE_BUCKET",
+      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+      appId: "YOUR_APP_ID",
+      measurementId: "YOUR_MEASUREMENT_ID"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app); // Initialize Auth
+    const db = getFirestore(app); // Initialize Firestore
+  
+    // Now 'auth' and 'db' are ready to use in your JavaScript!
+    // Example: For authentication, you'd do something like:
+    // signInWithEmailAndPassword(auth, email, password)
+    // Example: For Firestore, you'd do something like:
+    // const docRef = doc(db, "clients", "client123");
+    // await setDoc(docRef, { name: "John Doe", invested: 10000 });
+  </script>
+  <script src="your-custom-script.js"></script> <!-- Link to your own JavaScript file -->
+  </body>
+  </html>
+  
+    <header>
+        <div class="navbar">
+          <img src="images/ChatGPT Image Jun 30, 2025, 10_50_38 PM.png" alt="Smith Fund" class="logo">
+            <span class="company-name">Smith Legacy Holdings</span>
+            <nav>
+                <ul>
+                    <li><a href="our-philosophy.html">Our Statistics</a></li>
+                    <li><a href="who-we-are.html">Who We Are</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>The Smith Fund</h1>
+        <p>Wealth management outpacing market returns.</p>
+    </main>
+
+    <footer>
+        <h3><a href="contact.html">Contact Us</h3>
+    </footer>
+</body>
+</html>
